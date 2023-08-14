@@ -1,0 +1,32 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .plant-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjust the width based on your design */
+    box-sizing: border-box;
+  }
+  
+  .plant-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery-header {
+    margin-bottom: 20px;
+  }
+  
+  .gallery-header a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

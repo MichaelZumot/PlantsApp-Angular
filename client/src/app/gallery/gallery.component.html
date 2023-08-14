@@ -1,0 +1,14 @@
+
+
+<h1>here is our gallery!!!</h1>
+
+<div class="gallery-header">
+  
+  </div>
+  <div class="plant-gallery">
+    <div *ngFor="let plant of plants" class="plant-card">
+      <h3> {{ plant.latinName }} alt="{{ plant.latinName }}" </h3>
+      <h3>{{ plant.name }}</h3>
+      <p>{{ plant.description }}</p>
+    </div>
+  </div>
