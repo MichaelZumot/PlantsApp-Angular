@@ -9,7 +9,11 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MatToolbarModule } from '@angular/material';
+import { MatDividerModule } from '@angular/material';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -24,12 +28,17 @@ const routes: Routes = [
     AboutComponent,
     HomeComponent,
     GalleryComponent,
+    ToolbarComponent,
+  
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

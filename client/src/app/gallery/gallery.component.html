@@ -1,14 +1,16 @@
-
-
-<h1>here is our gallery!!!</h1>
+<h1>GALLERY | PlantsApp </h1>
+<mat-divider></mat-divider>
 
 <div class="gallery-header">
-  
+  <!-- Your gallery header content goes here -->
+</div>
+
+<div class="plant-gallery">
+  <div *ngFor="let plant of plants" class="plant-card">
+    <mat-card> {{plant.latinName}}
+      <mat-card-title>{{ plant.name }}</mat-card-title>
+      <mat-card-content>{{ plant.description }}</mat-card-content>
+    </mat-card>
   </div>
-  <div class="plant-gallery">
-    <div *ngFor="let plant of plants" class="plant-card">
-      <h3> {{ plant.latinName }} alt="{{ plant.latinName }}" </h3>
-      <h3>{{ plant.name }}</h3>
-      <p>{{ plant.description }}</p>
-    </div>
-  </div>
+</div>
+<router-outlet></router-outlet>

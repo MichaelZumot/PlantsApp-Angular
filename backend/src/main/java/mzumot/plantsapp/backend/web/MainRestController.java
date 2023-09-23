@@ -21,10 +21,10 @@ public class MainRestController {
     @GetMapping("/plants")
     public List<Plant> getAllPlants() {
         Plant plantA = new Plant(12344L, "Max", "Maxima Pilantes", "a very lovely plant");
-        Plant plantB = new Plant(11412L, "Vivi", "Verosita Barontes", "a very lovely plant");
-        Plant plantC = new Plant(16323L, "Pila", "Loompi Ceuta", "a very lovely plant");
-        Plant plantD = new Plant(12563L, "Kooki", "Holithia Antes", "a very lovely plant");
-        Plant plantE = new Plant(15745L, "Slim", "Monsteraas aslantes", "a very lovely plant");
+        Plant plantB = new Plant(11412L, "Vivi", "Verosita Barontes", "a pretty independent plant");
+        Plant plantC = new Plant(16323L, "Pila", "Loompi Ceuta", "a chill, no-drama kind a plant");
+        Plant plantD = new Plant(12563L, "Kooki", "Holithia Antes", "a capricious one that doesnt like to ve moved much ");
+        Plant plantE = new Plant(15745L, "Slim", "Monsteraas aslantes", "Loves the sun!");
         
         this.plants.add(plantA);
         this.plants.add(plantB);
