@@ -25,6 +25,8 @@ public class Plant {
 
     public String description;
 
+    public WateringSchedule wateringSchedule;
+
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -34,7 +36,8 @@ public class Plant {
         }
         Plant plant = (Plant) o;
         return Objects.equals(id, plant.id) && Objects.equals(name, plant.name)
-                && Objects.equals(description, plant.description);
+                && Objects.equals(description, plant.description)
+                && Objects.equals(wateringSchedule, plant.wateringSchedule);
     }
 
     @Override
@@ -47,8 +50,11 @@ public class Plant {
         return "{" +
                 " id='" + getId() + "'" +
                 ", name='" + getName() + "'" +
+                ", latinName='" + getLatinName() + "'" +
                 ", description='" + getDescription() + "'" +
-                "}";
+                ", wateringSchedule='" + getWateringSchedule() + "'" +
+                "}"
+        ;
     }
 
 }
